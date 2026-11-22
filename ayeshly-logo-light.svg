@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <defs>
+    <!-- Brand Electric Blue Gradient -->
+    <linearGradient id="ayeshly-blue-gradient-light" x1="16" y1="42" x2="44" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#007FFF"/>
+      <stop offset="60%" stop-color="#007FFF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="glow-filter-blue-light" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Emblem Container (Deep Blue #0A1128 with electric violet border) -->
+  <rect x="6" y="6" width="48" height="48" rx="14" fill="#0A1128" stroke="#007FFF" stroke-opacity="0.4" stroke-width="1.5"/>
+  <rect x="6.75" y="6.75" width="46.5" height="46.5" rx="13.25" stroke="#38BDF8" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- Inverted V Symbol (^ caret / apex) -->
+  <path d="M19 39 L30 19 L41 39" 
+        stroke="url(#ayeshly-blue-gradient-light)" 
+        stroke-width="3.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+        
+  <!-- Glowing Apex Node -->
+  <circle cx="30" cy="19" r="2.2" fill="#38BDF8" filter="url(#glow-filter-blue-light)"/>
+  <circle cx="30" cy="19" r="1.4" fill="#FFFFFF"/>
+
+  <!-- Wordmark: AYESHLY (Deep Dark Blue #0A1128 - Crisp, bold, high-contrast) -->
+  <text x="68" y="31" 
+        fill="#0A1128" 
+        font-family="Plus Jakarta Sans, system-ui, -apple-system, sans-serif" 
+        font-size="20" 
+        font-weight="800" 
+        letter-spacing="0.08em">AYESHLY</text>
+
+  <!-- Subtitle: TECHNOLOGIES (Electric Blue #007FFF - Distinct brand accent) -->
+  <text x="68.5" y="45" 
+        fill="#007FFF" 
+        font-family="Plus Jakarta Sans, system-ui, -apple-system, sans-serif" 
+        font-size="9" 
+        font-weight="700" 
+        letter-spacing="0.28em">TECHNOLOGIES</text>
+</svg>
